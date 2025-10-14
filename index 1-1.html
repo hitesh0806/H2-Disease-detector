@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+    </head>
+    <body>
+        <div id="content">
+            <h4>Personel details</h4>
+        <div>
+            <label>Name:</label><br>
+            <input id="name" placeholder="Enter your name"><br><br>
+            <label>Number:</label><br>
+            <input id="number" placeholder="Enter your number"><br><br>
+            <label>Address:</label><br>
+            <textarea id="address" placeholder="Enter your address"></textarea><br><br>
+            <label>E-mail:</label><br>
+            <input id="e-mail" placeholder="Enter your E-mail"><br><br>
+            <label>Password:</label><br>
+            <input id="password" placeholder="Enter a password"><br><br>
+            <button onclick="create()">Create</button>
+            <button onclick="viewprofile('personal_details_page')">View</button><br><br>
+            <button onclick="backtologin()">Back to login</button>
+            <button onclick="next_1()">Next</button><br><br>
+            <div id="profiles"></div>
+        </div>
+        </div>
+    </body>
+    <script src="java.js">
+    </script>
+</html>

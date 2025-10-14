@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+    </head>
+    <body>
+        <div id="content">
+          <div>
+            <h4>Bio details</h4>
+            <div id="hello"></div>
+            <label>Physical details:</label><br><br>
+            <label>Height:</label>
+                        <input id="height"><br><br>
+            <label>Weight:</label>
+                        <input id="weight"><br><br>
+            <label>Gender:</label>                       
+            <button id="male" onclick="gender('male')" value="10">Male</button>
+            <button id="female" onclick="gender('female')" value="=10+2">Female</button>
+            <button id="other" onclick="gender('other')" value="UG">Other</button><br><br>
+            <!--button id="eduqul-pg" onclick="e_qul('pg')" value="PG">PG</button>
+            <p id="eduqul"></p>
+            <div id="boards"></div-->
+            <label>Blood Group:</label><br><br>
+            <!--input id="placeofstudy"><br><br>
+            <label>Experience (In years):</label><br>
+            <button id="intern" onclick="experience('intern')" value="Intern">Intern</button>
+            <button id="fresher" onclick="experience('fresher')" value="Fresher">Fresher</button>
+            <button id="experienced" onclick="experience('experienced')" value="Experienced">Experienced</button>
+            <p></p>
+            <div id="job-experience-1">
+                <p id="job-experience-2"></p>
+            </div>
+            <div id="profiles"></div>
+            <h3>What role are u willing to take</h3-->
+            <button onclick="blood_grp('A+')">A+</button>
+            <button onclick="blood_grp('A-')">A-</button>
+            <button onclick="blood_grp('B+')">B+</button>
+            <button onclick="blood_grp('B-')">B-</button>
+            <button onclick="blood_grp('O+')">O+</button>
+            <button onclick="blood_grp('O-')">O-</button>
+            <button onclick="blood_grp('AB+')">AB+</button>
+            <button onclick="blood_grp('AB-')">AB-</button>
+            <!--div id="job_roles_view"></div-->
+            <h4>Medical information:</h4>
+
+            <label>Allergies (drugs, food, environment):</label><br>
+
+            <button onclick="drugs()">Drugs:</button>
+            <div id="drugs">
+            </div>
+            <button onclick="food()">Food:</button>
+            <div id="food">
+            </div>
+            <button onclick="environment()">Environment:</button>
+            <div id="environment">
+            </div><br><br>
+
+            <label>Medical History (chronic diseases: diabetes, asthma, heart issues):</label><br>
+
+                <button onclick="medicalHistory('diabetes')">Diabetes</button>
+                <button onclick="medicalHistory('hypertension')">Hypertension / High Blood Pressure</button>
+                <button onclick="medicalHistory('asthma')">Asthma</button>
+                <button onclick="medicalHistory('heart_disease')">Heart Disease</button>
+                <button onclick="medicalHistory('thyroid_disorders')">Thyroid Disorders</button>
+                <button onclick="medicalHistory('kidney_disease')">Kidney Disease</button>
+                <button onclick="medicalHistory('liver_disease')">Liver Disease</button>
+                <button onclick="medicalHistory('none')">None / Healthy</button>
+                <button onclick="others()">Others (specify)</button><br><br>
+
+            <label>Current Medications:</label><br>
+
+                <button onclick="currentMedications('metformin')">Metformin (diabetes)</button>
+                <button onclick="currentMedications('insulin')">Insulin</button>
+                <button onclick="currentMedications('blood_pressure_meds')">Blood Pressure Meds (ACE inhibitors, Beta-blockers)</button>
+                <button onclick="currentMedications('inhalers')">Inhalers (for asthma)</button>
+                <button onclick="currentMedications('painkillers_nsads')">Painkillers / NSAIDs</button>
+                <button onclick="currentMedications('vitamins_supplements')">Vitamins / Supplements</button>
+                <button onclick="currentMedications('none')">None</button>
+                <button onclick="others()">Others (text input)</button><br><br>
+                
+          </div>
+        </div>
+        <button onclick="create_1()">Create</button>
+        <button onclick="viewprofile('med_details_page')">View</button><br><br>
+        <button onclick="backtologin()">Back to login</button>
+    </body>
+    <script src="java.js">
+    </script>
+</html>

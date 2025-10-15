@@ -14,7 +14,7 @@ function profile(){
         profile_ = 0;
     }
         else if(profile_ === 0){
-          document.querySelector('#content_2').innerHTML=``;
+          document.querySelector('#content_2').innerHTML='';
           document.querySelector('#profile_btn').innerHTML='Show profile';
           profile_=1;
         }
@@ -25,12 +25,6 @@ profile();
 let x, y, z, i;
 let symptoms_1 = [];
 let symptoms_2 = [];
-let common_cold = ['common_cold'];
-let dengue = ['dengue'];
-let migrane = ['migrane'];
-let food_poisoning = ['food_poisoning'];
-let asthma = ['asthma'];
-let dehydration = ['dehydration'];
 
 let disease = [];
 let possible_disease = [];
@@ -67,10 +61,10 @@ document.querySelectorAll('.noBtn').forEach((button) => {
   })
 })
 function finalAnswer(){
-for(i=0; i<symptoms_1.length; i++){
-  /*document.querySelector("#symptoms_2").innerHTML=`
+ /*for(i=0; i<symptoms_1.length; i++){
+  document.querySelector("#symptoms_2").innerHTML=`
   <button>${symptoms_1[i]}</button>
-  `;*/
+  `;
   if(symptoms_1[i]==='fever'){
   common_cold.push(symptoms_1[i]);
   dengue.push(symptoms_1[i]);
@@ -104,10 +98,10 @@ for(i=0; i<symptoms_1.length; i++){
 }
 disease.push(common_cold,migrane,dehydration,dengue,food_poisoning,asthma);
 //console.log(disease)
-nxt();
+nxt();*/
 }
 
-function nxt(){
+/*function nxt(){
 disease.forEach((element) => {
   //console.log('heyy', element);
 if(element.length >= 5){
@@ -115,8 +109,10 @@ if(element.length >= 5){
 }
 })
 console.log('heyy', possible_disease);
-}
+}*/
 
+
+ 
 
 
 

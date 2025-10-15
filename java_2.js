@@ -206,6 +206,7 @@ document.querySelectorAll(".yesBtn").forEach((button) => {
         let x = button.dataset.symptom;
         let y = button.dataset.symptom_name;
     //    let html=``;
+    symptoms_3[0] = x;
         if(x === 'common_cold'){
             common_cold();
             dis++;

@@ -9,6 +9,18 @@ let symp_arr = JSON.parse(localStorage.getItem('symptoms_array'))
 
 if(dis){
     console.log(symp_arr)
+    let html=``;
+    let divcontent=``;
+    symp_arr.forEach((element) => {
+        html=`<li>${element}</li>`
+        divcontent += html;
+    });
+    document.querySelector('#report').innerHTML=`
+    <h3>Common Symptoms:</h3>
+    <ul>
+        ${divcontent}
+    </ul>
+    `;
    // nxt();
 }/*else{
     document.querySelector('#response').innerHTML = `
